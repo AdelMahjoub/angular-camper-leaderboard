@@ -1,0 +1,29 @@
+<div class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="" class="navbar-brand" target="_blank">Campers LeaderBoard</a>
+    </div>
+
+    <div class="navbar-form navbar-right">
+      
+      <div class="input-group">
+        <div class="input-group-addon">
+          <span>Top of</span>
+        </div>
+        <select name="feature" (change)="onFeatureChange($event)" class="form-control">
+          <option value="all">All Time</option>
+          <option value="latest">Las 30 days</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="form-control" (input)="onSearchTermChange($event)"/>
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
